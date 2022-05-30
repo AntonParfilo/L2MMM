@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/vip_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_weight="0.1"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/vip_icon1" />
+
+            <TextView
+                    android:onClick="GotoViewServer"
+                    android:fontFamily="@font/ptsansnarrowbold"
+                    android:id="@+id/server_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/beg"
+                    android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:id="@+id/id_server"
+                android:alpha="0">
+            </TextView>
+
+
+            <TextView
+                android:fontFamily="@font/ptsansnarrowbold"
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:layout_marginRight="1dp"
+                    android:textColor="@color/beg1"
+                    android:textSize="15sp"
+                    android:text="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/stars_title"
+                android:layout_width="100dp"
+                android:layout_height="22dp"
+                app:srcCompat="@drawable/stars_off"
+                 />
+
+            <TextView
+                android:id="@+id/rating_count"
+                android:fontFamily="@font/ptsansnarrowbold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1903)"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:fontFamily="@font/ptsansnarrowbold"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:id="@+id/chronicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textColor="@color/beg1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:fontFamily="@font/ptsansnarrowbold"
+                android:id="@+id/rates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/beg1"
+                android:textSize="15sp"
+                android:text="@string/app_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

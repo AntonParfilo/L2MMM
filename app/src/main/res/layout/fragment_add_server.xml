@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context=".AddServer">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tittle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_content"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:textAllCaps="true"
+                android:fontFamily="@font/ptsansnarrowbold"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:id="@+id/layout_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ДОБАВИТЬ СЕРВЕР"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_content"
+            android:padding="15dp"
+            >
+            <TextView
+                android:textAllCaps="true"
+                android:fontFamily="@font/fundamentalcondensedregular"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/server_adress_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="АДРЕС     HTTP://"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/server_address"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:background="@drawable/bg_content"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/server_adress_title"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_content"
+            android:padding="15dp"
+            >
+            <TextView
+                android:textAllCaps="true"
+                android:fontFamily="@font/fundamentalcondensedregular"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/chronicle_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ХРОНИКИ             "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Spinner
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chronicle_title"
+                android:id="@+id/chronicle_spinner"
+                android:background="@drawable/bg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_content"
+            android:padding="15dp"
+            >
+            <TextView
+                android:textAllCaps="true"
+                android:fontFamily="@font/fundamentalcondensedregular"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/rates_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="РЕЙТЫ                X"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rates"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:background="@drawable/bg_content"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rates_title"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:selectedWeekBackgroundColor="@color/orange"
+            android:weekNumberColor="@color/orange" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_content"
+                android:onClick="addServer"
+                android:padding="15dp"
+                android:text="ДОБАВИТЬ СЕРВЕР"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ProgressBar
+                android:visibility="invisible"
+                android:id="@+id/progressBar_addServer"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateTint="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

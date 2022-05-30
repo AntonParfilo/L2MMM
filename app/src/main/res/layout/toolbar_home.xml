@@ -1,0 +1,52 @@
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/but_menu"
+    android:theme="@style/Theme.AppCompat.DayNight"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:contentInsetStartWithNavigation="0dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_wrap"
+        >
+    <Spinner
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:popupTheme="@style/CatalogItemSpinner"
+        android:id="@+id/select_chronilce"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_weight="1"
+        />
+
+    <Spinner
+        android:id="@+id/select_rates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/select_chronilce"
+        app:layout_constraintEnd_toStartOf="@+id/select_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+
+    <Spinner
+        android:gravity="right"
+        android:id="@+id/select_date"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,7 @@
+<ImageView android:background="@drawable/stars5"
+    android:id="@+id/resource"
+    android:layout_width="66dp"
+    android:layout_height="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+

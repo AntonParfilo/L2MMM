@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">L2M</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Анонсы</string>
+    <string name="menu_gallery">Добавить Сервер</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="msg_subscribed">Подписались на тему</string>
+    <string name="msg_subscribe_failed">ошибка подписки</string>
+    <string name="default_notification_channel_id">channelId</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="no_servers">НЕТ СОВПАДЕНИЙ</string>
+    <string name="comments"><u>КОММЕНТАРИИ</u></string>
+    <string-array name="Stars">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AddServer">Добавить сервер</string>
+    <string name="vip">VIP бесплатно</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="vip_text">Как получить VIP статус бесплатно?</string>
+    <string name="lineage_2_text">Зарегистрировать ваш сервер Lineage 2 в нашей системе.</string>
+    <string name="text42342">Разместить нашу не большую кнопку у себя на сайте.</string>
+    <string name="vip_text2365">Отправить письмо через обратную связь с названием вашего сервера и пометкой \'VIP бесплатно\'.</string>
+    <string name="vip_text765">Как только ваша заявка пройдёт модерацию, вашему серверу будет присвоен статус VIP.</string>
+    <string name="text32452">Выберите в каком углу будет кнопка</string>
+    <string name="dfasf">dfasf</string>
+    <string name="rek_top_left"><![CDATA[<a style=\'position: fixed; z-index:99999; top: 0; left: 0; margin-top: 10px; margin-left:10px;\' target=\'_blank\' href=\'https://play.google.com/store/apps/details?id=com.ragaban.l2m\'><img alt=\'Новые сервера Lineage 2, анонсы серверов л2\' border=\'0\' title=\'Новые сервера Lineage 2, анонсы серверов л2\' src=\'http://ragaban.zzz.com.ua/icon_web3.png\' width=\'80\' border=\'0\' /></a>]]></string>
+    <string name="rek_top_right"><![CDATA[<a style=\'position: fixed; z-index:99999; top: 0; right: 0; margin-top: 10px; margin-right:10px;\' target=\'_blank\' href=\'https://play.google.com/store/apps/details?id=com.ragaban.l2m\'><img alt=\'Новые сервера Lineage 2, анонсы серверов л2\' border=\'0\' title=\'Новые сервера Lineage 2, анонсы серверов л2\' src=\'http://ragaban.zzz.com.ua/icon_web3.png\' width=\'80\' border=\'0\' /></a>]]></string>
+    <string name="rek_bottom_left"><![CDATA[<a style=\'position: fixed; z-index:99999; bottom: 0; left: 0; margin-bottom: 10px; margin-left:10px;\' target=\'_blank\' href=\'https://play.google.com/store/apps/details?id=com.ragaban.l2m\'><img alt=\'Новые сервера Lineage 2, анонсы серверов л2\' border=\'0\' title=\'Новые сервера Lineage 2, анонсы серверов л2\' src=\'http://ragaban.zzz.com.ua/icon_web3.png\' width=\'80\' border=\'0\' /></a>]]></string>
+    <string name="rek_bottom_right"><![CDATA[<a style=\'position: fixed; z-index:99999; bottom: 0; right: 0; margin-bottom: 10px; margin-right:10px;\' target=\'_blank\' href=\'https://play.google.com/store/apps/details?id=com.ragaban.l2m\'><img alt=\'Новые сервера Lineage 2, анонсы серверов л2\' border=\'0\' title=\'Новые сервера Lineage 2, анонсы серверов л2\' src=\'http://ragaban.zzz.com.ua/icon_web3.png\' width=\'80\' border=\'0\' /></a>]]></string>
+    <string name="top_left">ВЕРХНИЙ ЛЕВЫЙ</string>
+    <string name="top_right">ВЕРХНИЙ ПРАВЫЙ</string>
+    <string name="bottom_right">НИЖНИЙ ПРАВЫЙ</string>
+    <string name="err1">Укажите адрес сервера.</string>
+</resources>
