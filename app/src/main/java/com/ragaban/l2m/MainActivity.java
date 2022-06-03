@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity  {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("8159027765-t2oqg3jjjne16foas082p1dqs7veoie7.apps.googleusercontent.com")
+                .requestIdToken("******")
                 .requestEmail()
                 .build();
         mAuth = FirebaseAuth.getInstance();
